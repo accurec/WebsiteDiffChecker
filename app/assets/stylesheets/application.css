@@ -68,8 +68,69 @@
     text-decoration: none;
     font-weight: 500;
     transition: background-color 0.2s;
+    border: none;
+    cursor: pointer;
 }
 
 .cta-button:hover {
     background: #1d4ed8;
+}
+
+/* Form styles */
+.url-form {
+    margin-top: 1.5rem;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.url-input {
+    width: 100%;
+    padding: 0.75rem;
+    border: 2px solid #e5e7eb;
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: border-color 0.2s;
+    box-sizing: border-box;
+}
+
+.url-input:focus {
+    outline: none;
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+.url-input::placeholder {
+    color: #9ca3af;
+}
+
+/* Flash message styles */
+.flash-notice,
+.flash-alert {
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 6px;
+    text-align: center;
+    font-weight: 500;
+}
+
+.flash-notice {
+    background: #d1fae5;
+    color: #065f46;
+    border: 1px solid #a7f3d0;
+}
+
+.flash-alert {
+    background: #fee2e2;
+    color: #991b1b;
+    border: 1px solid #fca5a5;
 }

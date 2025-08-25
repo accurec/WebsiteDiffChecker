@@ -11,4 +11,7 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   root "home#index"
+  
+  # Website analysis route
+  post "analyze", to: "home#analyze"
 end

@@ -1,19 +1,26 @@
 <div class="home-container">
   <div class="home-content">
     <h1>Welcome to Website Diff Checker</h1>
-    <p class="subtitle">Compare and analyze website differences with ease</p>
-    
     <div class="info-card">
-      <h2>Getting Started</h2>
-      <p>
-        This application helps you compare websites and identify changes between different versions or snapshots.
-      </p>
-      
-      <div class="button-container">
-        <a href="#" class="cta-button">
-          Start Comparing
-        </a>
-      </div>
+      <form class="url-form" action="/analyze" method="post">
+        <div class="form-group">
+          <label for="website_url">Website URL:</label>
+          <input 
+            type="url" 
+            id="website_url" 
+            name="website_url" 
+            placeholder="https://example.com"
+            required
+            class="url-input"
+          >
+        </div>
+        
+        <div class="button-container">
+          <button type="submit" class="cta-button">
+            Analyze Website
+          </button>
+        </div>
+      </form>
     </div>
   </div>
 </div>
